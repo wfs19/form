@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ccc;
+	margin: auto;
+}
+
+#botoes {
+	border:solid red 1px;
+	border-radius: 50px;
+	width: 500px;
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+}

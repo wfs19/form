@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ccc;
+}
+
+.principal {
+
+	max-width: 1200px;
+	width: 100%;
+	
+	height: 100%;
+	margin: auto;
+	background-color: #34495E;
+	padding-top: 150px;
+
+}
+
+
+/* Se fosse centralizar apenas a div, sempre tem de definir um tamanho 
+pra ela pois é tipo block e ocupa toda a width do espaço
+
+div {
+	width: 500px;
+	margin: auto;
+}
+
+*/
+
+form {
+	
+	
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 150px;
+	padding: 50px;
+	border-radius: 30px;
+	background-color: #89C4F4;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Formulario Bootstrap Diferenciado</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estiloform.css">
+	
+
+	
+
+</head>
+<body>
+	<div class="principal">
+	
+
+	<form method="POST" action="form.php">
+		
+		<fieldset>
+			<legend>Formulário</legend>
+		<div class="form-group">
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required autofocus tabindex="1">
+		</div>
+			<br>
+		<div class="form-group">
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com" required tabindex="2">
+		</div>
+		<br>
+			<input type="hidden" name="id" value="1">
+		<div class="form-group">
+			<label for="senha">Senha:</label>
+			<input type="password" name="senha" id="senha" class="form-control" placeholder="Digite a sua senha" required>
+
+		</div>
+		<hr>
+		
+		<div class="form-group">
+			<label for="date">Nascimento:</label>
+			<input type="date" name="date" id="date" class="form-control" placeholder="dd/mm/aaaa" required min="2016-01-01" max="2017-03-25" required tabindex="3">
+		</div>
+		<br>
+		<div class="form-group">
+			<label>Sexo:</label>
+		<br>
+			<input type="radio" name="sexo" id="masculino" required>
+			<label for="masculino">Maculino</label>
+		<br>
+			<input type="radio" name="sexo" id="feminino" requied>
+			<label>Feminino</label>
+		</div>
+		<div class="form-group">
+			<label for="estado">Estado onde mora:</label>
+			<select name="estado" id="estado">
+
+				<optgroup label="Sudeste">
+					<option value="SP">São Paulo</option>
+					<option value="RJ" selected>Rio de Janeiro</option>
+					<option value="MG">Minas Gerais</option>
+
+				</optgroup>
+					<optgroup label="Sul">
+					<option value="PR">Paraná</option>
+					<option value="SC">Santa Catarina</option>
+					<option value="RS">Rio Grande do Sul</option>
+				</optgroup>
+
+			</select>
+
+
+		</div>
+		<hr>
+		<div class="form-group">
+			<label>Marque seus conhecimentos:</label>
+		<br>
+			<input type="checkbox" name="world" id="world">
+			<label for="world">World</label>
+		<br>
+			<input type="checkbox" name="excel" id="excel">
+			<label for="excel">Excel</label>
+		<br>
+			<input type="checkbox" name="powerpoint" id="powerpoint">
+			<label for="powerpoint">Power Point</label>
+		<br>
+		</div>
+
+		<div class="form-group">
+			<label for="formacao">Formação</label>
+			<select name="formacao" id="formacao">
+				<option value="incompleto">Incompleto</option>
+				<option value="medio" selected>Médio</option>
+				<option value="superior">Superior</option>
+
+			</select>
+			<br><br>
+			<div class="form-group">
+				
+			<label for="mes">Data: Mês/ano</label>
+			<input type="month" name="mes" id="mes" class="form-control">
+
+		</div>
+
+				
+				<hr>
+			
+
+		<div class="form-group">
+			<label for="texto">Mensagem:</label><br>
+			<textarea id="texto" placeholder="Digite a sua mensagem" cols="30" rows="10"></textarea>
+			
+
+		</div>
+
+		
+
+		
+
+		<div class="form-group">
+			<input type="checkbox" name="li" id="li" required checked>
+			<label for="li">Li e aceito o contrato</label>
+
+		</div>
+		<div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</div>
+
+
+
+
+	</fieldset>
+	</form>
+	
+	</div>
+	
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>	
+</body>
+
+</html>
